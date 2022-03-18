@@ -9,6 +9,6 @@ FROM
     posts
 INNER JOIN post_likes ON posts.user_id = post_likes.user_id
 WHERE
-    posts.user_id = 10
+    posts.user_id = {{user id}}
 GROUP BY
     posts.user_id
